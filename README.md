@@ -36,3 +36,5 @@ cc.config.json 文件位置 https://github.com/PPpro/engine/blob/35-open-harmony
 - 具体实现在 PAL 这里，参考 audio player 的实现 https://github.com/PPpro/engine/blob/35-open-harmony/pal/audio/open-harmony/player.ts
 
 - 编辑器里构建 Open Harmony 平台之后，相关实现会被打包到 cc.js 文件里
+
+**注意**：适配相应的模块，记得在项目偏好设置里开启对应模块，否则模块会被剔除掉，就不会打包到 cc.js 了
