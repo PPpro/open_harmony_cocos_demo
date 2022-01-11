@@ -64,7 +64,7 @@
         "_value": false
       },
       "audio": {
-        "_value": false
+        "_value": true
       },
       "video": {
         "_value": false
@@ -96,6 +96,7 @@
       "base",
       "gfx-webgl",
       "gfx-webgl2",
+      "audio",
       "3d",
       "2d",
       "ui"
