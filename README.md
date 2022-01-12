@@ -14,20 +14,27 @@ Cocos Creator 工程，使用 v3.5.0 正在开发的版本，用以构建输出 
 - application.js、game.ts 也不是使用的构建模板，而是直接拷贝现成的
 
 # 开发分支
-## editor 打包版本
-Windows 版本打包完成(v3.5.0)
+### editor 打包版本
+- Windows 版本打包完成(v3.5.0)
 下载地址：http://ftp.cocos.org/TestBuilds/Editor-3d/3.5.0/CocosCreator-v3.5.0-win32-011120.zip
-Mac 版本打包完成(v3.5.0)
+- Mac 版本打包完成(v3.5.0)
 下载地址：http://ftp.cocos.org/TestBuilds/Editor-3d/3.5.0/CocosCreator-v3.5.0-darwin-011120.zip
 
-## editor-extension 分支
+### editor-extension 分支
 https://github.com/PPpro/creator-runtime-extensions/tree/35-open-harmony
-拉取下来后，切到 35-open-harmony 分支，执行 `npm install` `npm run build`
 
-## engine 仓库 35-open-harmony 分支
+拉取下来后，切到 35-open-harmony 分支，执行 
+```sh
+# 安装依赖
+npm install
+# 编译 ts
+npm run build
+```
+
+### engine 仓库 35-open-harmony 分支
 https://github.com/pppro/engine/tree/35-open-harmony
 
-## engine-native 仓库 openharmony_v3.5.0_qgh 分支
+### engine-native 仓库 openharmony_v3.5.0_qgh 分支
 https://github.com/qiuguohua/engine-native/tree/openharmony_v3.5.0_qgh
 
 # 编辑器内设置
@@ -45,6 +52,7 @@ cc.config.json 文件位置 https://github.com/PPpro/engine/blob/35-open-harmony
 参考路径配置 `pal/audio/open-harmony/player.ts`
 
 - 具体实现在 PAL 这里，参考 audio player 的实现 https://github.com/PPpro/engine/blob/35-open-harmony/pal/audio/open-harmony/player.ts
+在这里可以通过访问 oh 对象来实现 PAL 的接口
 
 - 编辑器里构建 Open Harmony 平台之后，相关实现会被打包到 cc.js 文件里
 
